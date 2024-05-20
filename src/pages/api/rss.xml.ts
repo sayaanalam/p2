@@ -1,8 +1,6 @@
 import { NextApiHandler } from 'next';
 import RSS from 'rss';
 
-import { notesApi } from '../../lib/notesApi';
-
 const rss: NextApiHandler = async (req, res) => {
   const feed = new RSS({
     title: 'Bartosz Jarocki',
